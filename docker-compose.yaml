@@ -1,0 +1,20 @@
+services:
+  db:
+    image: postgres
+    environment:
+      POSTGRES_USER: app
+      POSTGRES_PASSWORD: password
+      POSTGRES_DB: products
+    ports:
+      - "5432:5432"
+  liquibase:
+    image: liquibase/liquibase
+    environment:
+      LIQUIBASE_COMMAND_URL: jdbc:postgresql://db:5432/products
+      LIQUIBASE_COMMAND_USERNAME: app
+      LIQUIBASE_COMMAND_PASSWORD: password
+      LIQUIBASE_SEARCH_PATH: /liquibase/changelog
+    volumes:
+      - ./liquibase/changelog:/liquibase/changelog
+    depends_on:
+      - db
