@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: backend
+  datasource:
+    url: jdbc:postgresql://localhost:5432/products
+    username: app
+    password: password
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    # open-in-view: false
