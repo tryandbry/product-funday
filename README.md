@@ -1,6 +1,6 @@
-# Bryan Kao Grainger Interview 2026-10-17
+# Product Funday
 ## Table of Contents
-- [Bryan Kao Grainger Interview 2026-10-17](#bryan-kao-grainger-interview-2026-10-17)
+- [Product Funday](#product-funday)
   - [Table of Contents](#table-of-contents)
   - [Prerequisites](#prerequisites)
   - [Quick Start](#quick-start)
