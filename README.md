@@ -9,6 +9,7 @@
     - [Start the database](#start-the-database)
     - [Migrate](#migrate)
   - [Build, Test, and Run command](#build-test-and-run-command)
+    - [Install dependencies](#install-dependencies)
     - [Build](#build)
       - [Build it all](#build-it-all)
       - [Backend build only](#backend-build-only)
@@ -36,6 +37,8 @@ Ensure you have the following installed:
 make db-start
 # migrate the database
 make db-migrate
+# install frontend dependencies
+make frontend-install
 # start the frontend and backend dev servers
 make -j2 start
 ```
@@ -57,6 +60,11 @@ make db-migrate
 ```
 
 ## Build, Test, and Run command
+### Install dependencies
+```bash
+make frontend-install
+```
+
 ### Build
 #### Build it all
 ```bash

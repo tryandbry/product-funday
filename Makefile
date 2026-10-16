@@ -26,6 +26,10 @@ backend-test:
 backend-build:
 	cd backend && ./gradlew build
 
+.PHONY: frontend-install
+frontend-install:
+	cd frontend && npm ci
+
 .PHONY: frontend-start
 frontend-start:
 	cd frontend && npm run dev
