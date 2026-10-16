@@ -30,6 +30,8 @@ Ensure you have the following installed:
 - Node.js 26
 - JDK 25
 
+Ensure Docker Desktop is running.
+
 ## Quick Start
 
 ```bash
